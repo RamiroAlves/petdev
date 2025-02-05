@@ -28,7 +28,7 @@ export function Hero() {
               className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit"
             >
               <WhatsappLogo className="w-5 h-5 gap-2" />
-              Contato via Whatsapp
+              Contato via WhatsApp
             </a>
 
             <div className="mt-8">
