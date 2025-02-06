@@ -6,24 +6,35 @@ import catImage from "../../../public/cat-hero.png";
 export function Hero() {
   return (
     <section className="bg-[#E84C3D] text-white relative overflow-hidden">
-
-        <div>
-            <Image src={dogImage} alt="Foto do dog" className="object-cover opacity-60 lg:hidden" fill sizes="100vw" priority />
-            <div className="absolute inset-0 bg-black opacity-40 lg:hidden"></div>
-        </div>
+      <div>
+        <Image
+          src={dogImage}
+          alt="Foto do dog"
+          className="object-cover opacity-60 lg:hidden"
+          fill
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-black opacity-40 lg:hidden"></div>
+      </div>
 
       <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
         <article className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+            <h1
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
+              data-aos="fade-down"
+            >
               Seu pet merece cuidado, carinho e atenção especial
             </h1>
-            <p className="lg:text-lg">
+            <p className="lg:text-lg" data-aos="fade-right">
               Oferecemos os melhores serviços para garantir o bem-estar e a
               felicidade do seu amigo de quatro patas.
             </p>
 
             <a
+              data-aos="fade-up"
+              data-aos-delay="500"
               href="#"
               className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit"
             >
@@ -39,7 +50,12 @@ export function Hero() {
 
               <div className="flex mt-4">
                 <div className="w-32 hidden lg:block">
-                    <Image src={catImage} alt="Foto do gato" quality={100} className="object-fill" />
+                  <Image
+                    src={catImage}
+                    alt="Foto do gato"
+                    quality={100}
+                    className="object-fill"
+                  />
                 </div>
               </div>
             </div>
